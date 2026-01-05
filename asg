@@ -1,0 +1,27 @@
+#Calculating The perimeter and area of the rectangle
+num1 = 4
+num2 = 8
+num3 =input("Do you want to find area or perimeter:")
+if num3 == "area":
+    print(num1*num2)
+elif num3 == "perimeter":
+    print(2*num1+2*num2)
+else:
+    print("invalid")
+
+#Converting from Celsius to Fahrenheit
+celsius =float((input("Enter temperature in Celsius:")))
+print((celsius*9/5) + 32)
+#Converting from Fahrenheit to Celsius
+fahrenheit =float((input("Enter temperature in Celsius:")))
+print((fahrenheit-32) * 5/9)
+
+#Student Names and Scores
+name = input("Students name:")
+score = float(input("Enter the test score:"))
+if score > 90
+    grade = "A"
+    result = "pass"
+elif score >= 85
+    grade = "A-"
+    result = "pass"
