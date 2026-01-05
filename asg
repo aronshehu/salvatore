@@ -13,15 +13,35 @@ else:
 celsius =float((input("Enter temperature in Celsius:")))
 print((celsius*9/5) + 32)
 #Converting from Fahrenheit to Celsius
-fahrenheit =float((input("Enter temperature in Celsius:")))
+fahrenheit =float((input("Enter temperature in Fahrenheit:")))
 print((fahrenheit-32) * 5/9)
+
+#Seperating Ones and Tens
+number = int(input("Enter the 2-digit number:"))
+tens = number // 10
+ones = number % 10
+print("tens:", tens)
+print("ones:", ones)
 
 #Student Names and Scores
 name = input("Students name:")
 score = float(input("Enter the test score:"))
-if score > 90
+if score >= 90:
     grade = "A"
     result = "pass"
-elif score >= 85
-    grade = "A-"
-    result = "pass"
+elif score >= 80:
+    grade = "B"
+    result = "Pass"
+elif score >= 70:
+    grade = "C"
+    result = "Pass"
+elif score >= 60:
+    grade = "D"
+    result = "Pass"
+else:
+    grade = "F"
+    result = "Fail"
+print("Student Name:", name)
+print("Score:", score)
+print("Grade:", grade)
+print("Result:", result)
