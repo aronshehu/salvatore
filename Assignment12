@@ -1,0 +1,26 @@
+even_count = 0
+odd_count = 0
+
+num = 1
+
+while num != 0:
+    num = int(input("Enter a number (0 to stop) "))
+    if num %2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+print("Even numbers: ", even_count)
+print("Odd numbers: ", odd_count)
+
+#2
+
+top_layer = 1
+layers=0
+blocks = int(input("Enter the number of blocks: "))
+while blocks >= top_layer:
+    blocks=blocks-top_layer
+    top_layer+=1
+    layers +=1
+
+print("Number of layers: ", layers)
+print("Number of blocks: ", blocks)
