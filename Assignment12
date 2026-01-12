@@ -25,55 +25,47 @@ while blocks >= top_layer:
 print("Number of layers: ", layers)
 print("Number of blocks: ", blocks)
 
-even_count = 0
-odd_count = 0
-
-num = 1
-
-while num != 0:
-    num = int(input("Enter a number (0 to stop) "))
-    if num %2 == 0:
-        even_count += 1
-    else:
-        odd_count += 1
-print("Even numbers: ", even_count)
-print("Odd numbers: ", odd_count)
-
-#2
-
-top_layer = 1
-layers=0
-blocks = int(input("Enter the number of blocks: "))
-while blocks >= top_layer:
-    blocks=blocks-top_layer
-    top_layer+=1
-    layers +=1
-
-print("Number of layers: ", layers)
-print("Number of blocks: ", blocks)
-
 #Student Names and Scores
-name = input("Students name:")
-while grade != 0:
-score = float(input("Enter the test score:"))
-if score >= 90:
-    name.append(name)
-    grade.append(grade)
-    grade = "A"
-    result = "pass"
-elif score >= 80:
-    grade = "B"
-    result = "Pass"
-elif score >= 70:
-    grade = "C"
-    result = "Pass"
-elif score >= 60:
-    grade = "D"
-    result = "Pass"
-else:
-    grade = "F"
-    result = "Fail"
-print("Student Name:", name)
-print("Score:", score)
-print("Grade:", grade)
-print("Result:", result)
+names = []
+grades = []
+
+name = input("Student name (type 'stop' to finish): ")
+
+while name != "stop":
+    score = float(input("Enter the test score: "))
+
+    if score >= 90:
+        grade = "A"
+    elif score >= 80:
+        grade = "B"
+    elif score >= 70:
+        grade = "C"
+    elif score >= 60:
+        grade = "D"
+    else:
+        grade = "F"
+
+    names.append(name)
+    grades.append(grade)
+
+    name = input("Student name (type 'stop' to finish): ")
+
+print("All student names:")
+print(names)
+
+print("All grades:")
+print(grades)
+
+print("Students with their grades:")
+for i in range(len(names)):
+    print(names[i], "-", grades[i])
+
+#No vowel upper case
+word = input("Enter a word: ")
+
+word = word.upper()
+
+for letter in word:
+    if letter not in "AEIOU":
+        print(letter, end="")
+
