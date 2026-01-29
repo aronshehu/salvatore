@@ -1,0 +1,14 @@
+ACCESS_CODE = "CIT"
+def check_access_code(user_input):
+    user_input == ACCESS_CODE
+    if user_input == ACCESS_CODE:
+        return True
+    else:
+        return False
+input_code = input("Enter access code: ")
+result = check_access_code(input_code)
+if result == True:
+    print("Access approved. Welcome!")
+else:
+    print("Access denied. Invalid access code")
+        
